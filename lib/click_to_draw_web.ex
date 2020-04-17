@@ -47,6 +47,15 @@ defmodule ClickToDrawWeb do
     end
   end
 
+  def live_view do
+    quote do
+      use Phoenix.LiveView,
+        layout: {ClickToDrawWeb.LayoutView, "live.html"}
+
+      import Phoenix.LiveView.Helpers
+    end
+  end
+
   def router do
     quote do
       use Phoenix.Router
