@@ -20,6 +20,7 @@ defmodule ClickToDrawWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    live "/svg_live", SVGLive
   end
 
   # Other scopes may use custom stacks.
