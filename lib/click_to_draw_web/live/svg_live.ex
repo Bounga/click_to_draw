@@ -7,9 +7,9 @@ defmodule ClickToDrawWeb.SVGLive do
 
   def render(assigns) do
     ~L"""
-    <svg phx-click="clicked" width="500" height="500" style="border: 1px solid blue">
+    <svg phx-click='clicked' width='500' height='500' style='border: 1px solid black'>
       <%= for {x, y} <- @points do %>
-        <circle cx="<%= x %>" cy="<%= y %>" r="3" fill="purple" />
+      <circle cx='<%= x %>' cy='<%= y %>' r='3' fill='#df6036' />
       <% end %>
     </svg>
     """
